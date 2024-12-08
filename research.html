@@ -63,17 +63,21 @@
             color: #cccccc; /* Light gray for the year */
         }
         .research-item .link {
-            margin-left: 10px;
+            margin-top: 5px;
         }
         .research-item .link a {
+            display: inline-block;
             text-decoration: none;
             color: #ffffff;
-            background-color: #444444;
+            border: 1px solid #ffffff; /* White border */
             padding: 5px 10px;
-            border-radius: 5px;
+            font-size: 0.9em;
+            text-align: center;
+            min-width: 80px; /* Ensure uniform size */
+            margin-right: 10px; /* Space between buttons */
         }
         .research-item .link a:hover {
-            background-color: #555555;
+            background-color: #444444;
         }
     </style>
 </head>
@@ -99,18 +103,27 @@
         <div class="research-item">
             <div class="title">DHSr R package</div>
             <div class="year">Year: 2024</div>
-            <div class="link"><a href="#">Link</a></div>
+            <div class="link">
+                <a href="#">ABSTRACT</a>
+                <a href="#">PDF</a>
+                <a href="#">CODE</a>
+            </div>
         </div>
         <div class="research-item">
             <div class="title">Community Effect on Educational Participation in Contemporary India: A District Level Analysis</div>
             <div class="year">Year: Working Paper</div>
-            <div class="link"><a href="#">PDF</a></div>
+            <div class="link">
+                <a href="#">ABSTRACT</a>
+                <a href="#">PDF</a>
+            </div>
         </div>
         <div class="research-item">
             <div class="title">Multidimensional Poverty Analysis: Assessing Poverty Patterns Among Different Demographic Groups of India</div>
             <div class="year">Year: 2022</div>
+            <div class="year">Journal: Journal of Progressive Research in Social Sciences</div>
             <div class="link">
-                <a href="https://scitecresearch.com/journals/index.php/jprss/article/view/2214" target="_blank">Journal Link</a>
+                <a href="https://scitecresearch.com/journals/index.php/jprss/article/view/2214" target="_blank">JOURNAL LINK</a>
+                <a href="#">PDF</a>
             </div>
         </div>
     </main>
