@@ -6,7 +6,7 @@
         body {
             background-color: #2e2e2e; /* Dark gray background */
             color: #ffffff; /* White text */
-            font-family: Arial, sans-serif;
+            font-family: "Courier New", Courier, monospace; /* Slick monospaced font */
             margin: 0;
             padding: 0;
         }
@@ -39,32 +39,41 @@
             max-width: 900px;
             margin: 40px auto;
             padding: 20px;
-            text-align: justify;
         }
         main h2 {
             font-size: 2em;
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left; /* Left-aligned title */
         }
         main p {
             font-size: 1.2em;
             line-height: 1.5;
         }
-        main ul {
+        .research-item {
             font-size: 1.2em;
             line-height: 1.8;
             margin-top: 20px;
-            padding-left: 20px;
         }
-        main ul li {
-            margin-bottom: 10px;
+        .research-item .title {
+            color: #1e90ff; /* Blue text */
+            font-weight: bold;
         }
-        main ul li a {
-            color: #1e90ff;
+        .research-item .year {
+            font-size: 1em;
+            color: #cccccc; /* Light gray for the year */
+        }
+        .research-item .link {
+            margin-left: 10px;
+        }
+        .research-item .link a {
             text-decoration: none;
+            color: #ffffff;
+            background-color: #444444;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-        main ul li a:hover {
-            text-decoration: underline;
+        .research-item .link a:hover {
+            background-color: #555555;
         }
     </style>
 </head>
@@ -84,16 +93,23 @@
             not available on the site, please contact me via email, and I will be happy to send you a copy! 
             If you want the code or data, please contact via email: <strong>arnob.shamanta62@gmail.com</strong>.
         </p>
-        <ul>
-            <li><a href="#">DHSr R package (Year: 2024)</a></li>
-            <li><a href="#">Community Effect on Educational Participation in Contemporary India: A District Level Analysis (Working Paper)</a></li>
-            <li>
-                <a href="https://scitecresearch.com/journals/index.php/jprss/article/view/2214" target="_blank">
-                    Multidimensional Poverty Analysis: Assessing Poverty Patterns Among Different Demographic Groups of India, 
-                    Journal of Progressive Research in Social Sciences (Year: 2022)
-                </a>
-            </li>
-        </ul>
+        <div class="research-item">
+            <div class="title">DHSr R package</div>
+            <div class="year">Year: 2024</div>
+            <div class="link"><a href="#">Link</a></div>
+        </div>
+        <div class="research-item">
+            <div class="title">Community Effect on Educational Participation in Contemporary India: A District Level Analysis</div>
+            <div class="year">Year: Working Paper</div>
+            <div class="link"><a href="#">PDF</a></div>
+        </div>
+        <div class="research-item">
+            <div class="title">Multidimensional Poverty Analysis: Assessing Poverty Patterns Among Different Demographic Groups of India</div>
+            <div class="year">Year: 2022</div>
+            <div class="link">
+                <a href="https://scitecresearch.com/journals/index.php/jprss/article/view/2214" target="_blank">Journal Link</a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
