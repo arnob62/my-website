@@ -1,50 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Research - My GitHub Website</title>
+    <title>Research - Arnab Samanta</title>
     <style>
         body {
             background-color: #2e2e2e; /* Dark gray background */
             color: #ffffff; /* White text */
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
-        h1 {
-            text-align: center;
-            font-size: 2em;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-            text-align: justify;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        a {
-            text-decoration: none;
-            color: #ffffff;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #444444;
             padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-            text-align: center;
-            margin: 20px auto;
         }
-        a:hover {
-            background-color: #555555;
+        header h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        header .tabs {
+            display: flex;
+            gap: 15px;
+        }
+        header .tabs a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #666666;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        header .tabs a:hover {
+            background-color: #777777;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: justify;
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        main p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        main ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        main ul li {
+            margin-bottom: 10px;
+        }
+        main ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        main ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>My Research</h1>
-    <p>
-        Welcome to the Research page. Here, I will share updates and insights from my academic and professional research. 
-        Topics include statistical modeling, R programming, clinical trial methodologies, and other data-driven projects.
-    </p>
-    <p>
-        Stay tuned for more detailed updates and links to papers, dashboards, and other resources.
-    </p>
-    <a href="index.html">Back to Home</a>
+    <header>
+        <h1>Arnab Samanta</h1>
+        <div class="tabs">
+            <a href="CV_git.pdf" target="_blank">CV</a>
+            <a href="research.html">Research</a>
+            <a href="#photography">Photography</a>
+        </div>
+    </header>
+    <main>
+        <h2>Research</h2>
+        <p>
+            You can find my academic writings, publications, and R packages below. In case a downloadable PDF is 
+            not available on the site, please contact me via email, and I will be happy to send you a copy! 
+            If you want the code or data, please contact via email: <strong>arnob.shamanta62@gmail.com</strong>.
+        </p>
+        <ul>
+            <li><a href="#">DHSr R package (Year: 2024)</a></li>
+            <li><a href="#">Community Effect on Educational Participation in Contemporary India: A District Level Analysis (Working Paper)</a></li>
+            <li>
+                <a href="https://scitecresearch.com/journals/index.php/jprss/article/view/2214" target="_blank">
+                    Multidimensional Poverty Analysis: Assessing Poverty Patterns Among Different Demographic Groups of India, 
+                    Journal of Progressive Research in Social Sciences (Year: 2022)
+                </a>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
