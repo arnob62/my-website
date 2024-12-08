@@ -29,6 +29,22 @@
             margin: 0 0 10px 0; /* Space below the headline */
             font-size: 1.8em;
         }
+        .tabs {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .tabs a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #444444;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .tabs a:hover {
+            background-color: #555555;
+        }
     </style>
 </head>
 <body>
@@ -37,14 +53,27 @@
         <div class="text-content">
             <h1>Welcome to My GitHub Website</h1>
             <p>
-                This is a simple website hosted on GitHub Pages. The image is positioned on the top-left corner, 
-                and all the text appears beside it. Add more details about your site here, and it will align neatly next to the image.
+                I am a data analyst working on clinical randomized controlled trials for several organizations. 
+                At present, I work for Cytel. Previously, I worked at Novartis, GSK, and IQVIA. 
+                I am also a collaborator assisting in academic research at the Indian Institute of Management Ahmedabad, 
+                Kingston University, and Cambridge University.
             </p>
             <p>
-                For instance, you can describe your project, share links, or add any other content. 
-                This layout makes it easy to organize text and images together.
+                I completed my Master's in Statistics from the University of Calcutta.
+            </p>
+            <p>
+                On this page, I upload snippets from my ongoing work—mostly academic work when I find something 
+                interesting, R packages/dashboards, and sometimes a bit of photography when I get time during my 
+                fieldwork. You can check them here as well. ;)
             </p>
         </div>
+    </div>
+    
+    <!-- Tabs Section -->
+    <div class="tabs">
+        <a href="#cv">CV</a>
+        <a href="#research">Research</a>
+        <a href="#photography">Photography</a>
     </div>
 </body>
 </html>
